@@ -1,0 +1,44 @@
+/* === RESET.CSS === */
+
+/* 1. Use border-box everywhere */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. Remove list styles */
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+
+/* 4. Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* 5. Make images easier to work with */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 6. Inherit fonts for form elements */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Remove animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
