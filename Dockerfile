@@ -1,3 +1,5 @@
+# force rebuild 001
+
 FROM php:8.3-cli
 
 # Install system dependencies and PHP extensions Laravel needs
