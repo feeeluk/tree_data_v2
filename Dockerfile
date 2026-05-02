@@ -5,7 +5,6 @@ RUN apt-get update && apt-get install -y \
     unzip \
     libzip-dev \
     git \
-    libonig-dev \
     libxml2-dev \
     && docker-php-ext-install zip pdo pdo_mysql mbstring tokenizer xml
 
