@@ -1,5 +1,3 @@
-# force rebuild 001
-
 FROM php:8.3-cli
 
 # Install system dependencies and PHP extensions Laravel needs
@@ -7,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     libzip-dev \
     git \
+    libonig5-dev \
     libxml2-dev \
     && docker-php-ext-install zip pdo pdo_mysql mbstring tokenizer xml
 
