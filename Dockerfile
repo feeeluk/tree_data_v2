@@ -1,5 +1,6 @@
 # force rebuild 005
-FROM serversideup/php:8.2-fpm-nginx
+FROM php:8.2-apache
+
 
 WORKDIR /var/www/html
 
@@ -9,4 +10,4 @@ RUN composer install --no-dev --optimize-autoloader
 
 EXPOSE 8080
 
-CMD ["start-container"]
+CMD ["apache2-foreground"]
