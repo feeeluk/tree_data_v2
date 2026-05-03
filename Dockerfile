@@ -12,6 +12,8 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 
 RUN apt-get update && apt-get install -y git
 
+RUN apt-get update && apt-get install -y libpq-dev
+
 RUN docker-php-ext-install pdo pdo_pgsql
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
