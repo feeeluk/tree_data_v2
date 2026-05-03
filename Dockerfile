@@ -8,6 +8,7 @@ WORKDIR /var/www/html
 
 COPY . .
 
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 RUN apt-get update && apt-get install -y git
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
