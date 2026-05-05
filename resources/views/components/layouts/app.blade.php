@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tree Data</title>
+    <title>{{ $title }}</title>
     <link rel="stylesheet" href="/css/app.css">
 
 </head>
