@@ -17,9 +17,9 @@ class App extends Component
     {
         $env = app()->environment();
 
-        if ($env === 'production') {
+        if ($env === 'live') {
             $this->title = 'Treedata';
-        } elseif ($env === 'staging') {
+        } elseif ($env === 'test') {
             $this->title = 'TEST - Treedata';
         } else {
             $this->title = 'LOCAL - Treedata';
