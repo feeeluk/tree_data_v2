@@ -16,12 +16,17 @@ RUN apt-get update && apt-get install -y curl \
 RUN npm install
 RUN npm run build
 
+# Install PostgreSQL headers AFTER Node
+RUN apt-get update && apt-get install -y libpq-dev
+
+# Compile PHP extensions
+RUN docker-php-ext-install pdo pdo_pgsql
+
 # Permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Install Git + PHP extensions
-RUN apt-get update && apt-get install -y git libpq-dev
-RUN docker-php-ext-install pdo pdo_pgsql
+# Install Git
+RUN apt-get update && apt-get install -y git
 
 # Install Composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
