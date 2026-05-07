@@ -9,6 +9,7 @@ use Illuminate\View\Component;
 class App extends Component
 {
     public string $title;
+    public string $logoText;
 
     /**
      * Create a new component instance.
@@ -19,10 +20,15 @@ class App extends Component
 
         if ($env === 'live') {
             $this->title = 'Tree Data';
+            $this->logoText = 'Tree Data';
+            
         } elseif ($env === 'test') {
             $this->title = 'TEST - Tree Data V2';
+            $this->logoText = 'TEST - Tree Data V2';
+
         } else {
             $this->title = 'LOCAL - Tree Data V2';
+            $this->logoText = 'LOCAL - Tree Data V2';
         }
     }
 

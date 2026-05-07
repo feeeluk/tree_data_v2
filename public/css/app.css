@@ -98,3 +98,8 @@ a {
     margin-right: 10px;
     color: white;
 }
+
+.box {
+    margin: 1rem;
+    background: white;
+}
