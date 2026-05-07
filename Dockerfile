@@ -1,21 +1,29 @@
-# force rebuild 005
 FROM php:8.2-apache
+
 RUN sed -i 's|/var/www/html|/var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
-
 
 WORKDIR /var/www/html
 
 COPY . .
 
+# Install Node + npm
+RUN apt-get update && apt-get install -y curl \
+    && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
+
+# Build frontend assets
+RUN npm install
+RUN npm run build
+
+# Permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-RUN apt-get update && apt-get install -y git
-
-RUN apt-get update && apt-get install -y libpq-dev
-
+# Install Git + PHP extensions
+RUN apt-get update && apt-get install -y git libpq-dev
 RUN docker-php-ext-install pdo pdo_pgsql
 
+# Install Composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
     && rm composer-setup.php \
