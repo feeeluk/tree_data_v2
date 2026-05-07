@@ -1,4 +1,4 @@
-<x-layouts.app>
+<x-layouts.homepage>
 
     <h1>Home page</h1>
 
@@ -10,4 +10,4 @@
         This is another box.
     </x-box>
 
-</x-layouts.app>
+</x-layouts.homepage>

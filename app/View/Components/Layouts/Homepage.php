@@ -4,7 +4,7 @@ namespace App\View\Components\Layouts;
 
 use Illuminate\View\Component;
 
-class App extends Component
+class Homepage extends Component
 {
     public string $title;
 
@@ -23,6 +23,6 @@ class App extends Component
 
     public function render()
     {
-        return view('components.layouts.app');
+        return view('components.layouts.homepage');
     }
 }
