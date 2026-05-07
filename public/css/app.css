@@ -1,8 +1,100 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-body {
+    @media (min-width: 400px){
+        nav{
+            height: 3rem;
+        }        
+    }
+
+    @media (min-width: 639px){
+        nav{
+            height: 4rem;
+        }
+    }
+
+    @media (min-width: 959px){
+        nav{
+            height: 5rem;
+        }
+    }
+
+    @media (min-width: 1279px){
+        nav{
+            height: 6rem;
+        }
+    }
+
+main {
+    position: absolute;
+    width: 100%;
     background: red;
 }
-nav a {
+
+    @media (min-width: 400px){
+        main{
+            height: calc(100% - 4rem);
+            top: 3rem;
+        }        
+    }
+
+    @media (min-width: 639px){
+        main{
+            height: calc(100% - 6rem);
+            top: 4rem;
+        }
+    }
+
+    @media (min-width: 959px){
+        main{
+            height: calc(100% - 8rem);
+            top: 5rem;
+        }
+    }
+
+        @media (min-width: 1279px){
+        main{
+            height: calc(100% - 9rem);
+            top: 6rem;
+        }
+    }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    @media (min-width: 400px){
+        footer{
+            height: 1rem;
+        }        
+    }
+
+    @media (min-width: 639px){
+        footer{
+            height: 2rem;
+        }
+    }
+
+    @media (min-width: 959px){
+        footer{
+            height: 3rem;
+        }
+    }
+
+a {
     margin-right: 10px;
-    color: blue;
+    color: white;
 }
