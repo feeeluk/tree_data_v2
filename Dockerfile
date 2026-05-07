@@ -12,6 +12,8 @@ WORKDIR /var/www/html
 
 COPY . .
 
+RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+
 RUN composer install --no-dev --optimize-autoloader
 
 # Fix Apache DocumentRoot for Laravel
