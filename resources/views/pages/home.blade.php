@@ -1,4 +1,6 @@
-<x-layouts.homepage>
+@extends('layouts.homepage')
+
+@section('page-content')
 
     <h1>Home page</h1>
 
@@ -10,4 +12,4 @@
         This is another box.
     </x-box>
 
-</x-layouts.homepage>
+@endsection
