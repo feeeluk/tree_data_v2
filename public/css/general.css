@@ -32,44 +32,45 @@ nav {
 
 /* MAIN */
 main {
+    position: fixed;
     width: 100%;
     background: red;
     top: 2rem;
-    min-height: calc(100% - 3rem); /* default height */
+    height: calc(100% - 3rem); 
 }
 
     @media (max-width: 399px){
         main {
-            height: calc(100% - 3rem);
             top: 2rem;
+            height: calc(100% - 3rem);
         }
     }
 
     @media (min-width: 400px){
         main {
-            height: calc(100% - 4rem);
             top: 3rem;
+            height: calc(100% - 4rem);
         }
     }
 
     @media (min-width: 639px){
         main {
-            height: calc(100% - 6rem);
             top: 4rem;
+            height: calc(100% - 6rem);
         }
     }
 
     @media (min-width: 959px){
         main {
-            height: calc(100% - 8rem);
             top: 5rem;
+            height: calc(100% - 8rem);
         }
     }
 
     @media (min-width: 1279px){
         main {
-            height: calc(100% - 9rem);
             top: 6rem;
+            height: calc(100% - 9rem);
         }
     }
 
