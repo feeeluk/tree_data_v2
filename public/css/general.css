@@ -32,11 +32,10 @@ nav {
 
 /* MAIN */
 main {
-    position: absolute;
     width: 100%;
     background: red;
     top: 2rem;
-    height: calc(100% - 3rem); /* default height */
+    min-height: calc(100% - 3rem); /* default height */
 }
 
     @media (max-width: 399px){
