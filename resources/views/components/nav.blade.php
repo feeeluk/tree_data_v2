@@ -1,6 +1,6 @@
 <nav>
     <p>
-        {{ $environment}} Tree Data V2
+        {{ $environmentLabel }}
     </p>
 
     <a href="/">Home</a>

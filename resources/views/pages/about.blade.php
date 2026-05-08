@@ -1,3 +1,3 @@
-<x-layouts.homepage>
+<x-layouts.logged_on>
     <h1>About page</h1>
-</x-layouts.homepage>
+</x-layouts.logged_on>
