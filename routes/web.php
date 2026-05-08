@@ -4,4 +4,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
 
-Route::get('/about', fn() => view('pages.about'));
+Route::get('/test', fn() => view('pages.test'));

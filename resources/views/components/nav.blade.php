@@ -4,6 +4,6 @@
     </h1>
 
     <a href="/">Home</a>
-    <a href="/about">About</a>
+    <a href="/test">Test</a>
     
 </nav>

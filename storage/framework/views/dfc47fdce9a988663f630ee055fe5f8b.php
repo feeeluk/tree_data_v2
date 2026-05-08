@@ -1,17 +1,17 @@
 
 
 <?php $__env->startPush('layout-css'); ?>
-<link rel="stylesheet" href="/css/homepage.css">
+<link rel="stylesheet" href="/css/user.css">
 <?php $__env->stopPush(); ?>
 
-<?php $__env->startSection('title', 'Homepage'); ?>
+<?php $__env->startSection('title', 'User'); ?>
 
 <?php $__env->startSection('layout-content'); ?>
 
-    <?php if (isset($component)) { $__componentOriginal23281c07c3e33e5173513b279530a6d2 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal23281c07c3e33e5173513b279530a6d2 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.nav-simple','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('nav-simple'); ?>
+    <?php if (isset($component)) { $__componentOriginalff09156f73c896030ee75284e9b2c466 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalff09156f73c896030ee75284e9b2c466 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.nav','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('nav'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
@@ -20,13 +20,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal23281c07c3e33e5173513b279530a6d2)): ?>
-<?php $attributes = $__attributesOriginal23281c07c3e33e5173513b279530a6d2; ?>
-<?php unset($__attributesOriginal23281c07c3e33e5173513b279530a6d2); ?>
+<?php if (isset($__attributesOriginalff09156f73c896030ee75284e9b2c466)): ?>
+<?php $attributes = $__attributesOriginalff09156f73c896030ee75284e9b2c466; ?>
+<?php unset($__attributesOriginalff09156f73c896030ee75284e9b2c466); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal23281c07c3e33e5173513b279530a6d2)): ?>
-<?php $component = $__componentOriginal23281c07c3e33e5173513b279530a6d2; ?>
-<?php unset($__componentOriginal23281c07c3e33e5173513b279530a6d2); ?>
+<?php if (isset($__componentOriginalff09156f73c896030ee75284e9b2c466)): ?>
+<?php $component = $__componentOriginalff09156f73c896030ee75284e9b2c466; ?>
+<?php unset($__componentOriginalff09156f73c896030ee75284e9b2c466); ?>
 <?php endif; ?>
 
     <main>
@@ -56,4 +56,4 @@
 
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.base', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\Users\phili\Documents\Dev\Web\clients\key_tree_solutions\tree_data_v2\resources\views/layouts/homepage.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.base', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\Users\phili\Documents\Dev\Web\clients\key_tree_solutions\tree_data_v2\resources\views/layouts/user.blade.php ENDPATH**/ ?>
