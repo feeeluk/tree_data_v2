@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title><?php echo e($environmentLabel); ?></title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/user.css">
 
 </head>
 
@@ -60,4 +61,4 @@
 
 </body>
 </html>
-<?php /**PATH C:\Users\phili\Documents\Dev\Web\clients\key_tree_solutions\tree_data_v2\resources\views/components/layouts/logged_on.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\Users\phili\Documents\Dev\Web\clients\key_tree_solutions\tree_data_v2\resources\views/components/layouts/user.blade.php ENDPATH**/ ?>

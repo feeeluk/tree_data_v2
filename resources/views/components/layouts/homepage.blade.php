@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>{{ $environmentLabel }}</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/homepage.css">
 
 </head>
 
