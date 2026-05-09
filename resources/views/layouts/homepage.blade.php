@@ -14,6 +14,6 @@
         @yield('page-content')
     </main>
 
-    <x-footer />
+    <x-footer-simple />
 
 @endsection

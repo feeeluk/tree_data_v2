@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
 
+    
     <title><?php echo e($environmentLabel); ?> | <?php echo $__env->yieldContent('title'); ?></title>
-
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/general.css">

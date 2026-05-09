@@ -1,3 +1,48 @@
 main{
-    background: pink;
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    width: 80%;
+    background-image: url("/images/homepage/homepage_background.webp");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.loginForm {
+    width: 60%;
+    min-width: 60%;
+    height: 300px;
+    margin-top: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.loginTable {
+    margin-top: 30px;
+    width: 80%;
+    background: red;
+}
+
+.loginTableCol1 {
+    width: 30%;
+    background: blue;
+}
+
+.loginTableCol2 {
+    width: 5%;
+    background:green;    
+}
+
+.loginTableCol3 {
+    width: 65%;    
+}
+
+footer {
+    background: transparent;
 }

@@ -1,6 +1,6 @@
-@extends('layouts.homepage')
 
-@section('page-content')
+
+<?php $__env->startSection('page-content'); ?>
 
 <div>
 
@@ -34,4 +34,5 @@
     
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.homepage', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\Users\phili\Documents\Dev\Web\clients\key_tree_solutions\tree_data_v2\resources\views/pages/home.blade.php ENDPATH**/ ?>
