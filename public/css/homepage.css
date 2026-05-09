@@ -4,45 +4,38 @@ main{
     justify-content: center;
 }
 
-div {
-    width: 80%;
+footer {
+    background: white;
+}
+
+.loginDiv {
+    width: 90%;
     background-image: url("/images/homepage/homepage_background.webp");
     background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
     display: flex;
     justify-content: center;
 }
 
 .loginForm {
-    width: 60%;
-    min-width: 60%;
-    height: 300px;
-    margin-top: 50px;
+    height: fit-content;
+    margin-top: 30px;
     background: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    padding: 20px;
 }
 
-.loginTable {
-    margin-top: 30px;
-    width: 80%;
-    background: red;
-}
+@media (min-width: 400px){
+        .loginForm {
+            margin-top: 50px;
+        }
+    }
 
 .loginTableCol1 {
-    width: 30%;
-    background: blue;
+    padding: 10px 10px 10px 0;
 }
 
-.loginTableCol2 {
-    width: 5%;
-    background:green;    
-}
-
-.loginTableCol3 {
-    width: 65%;    
-}
-
-footer {
-    background: transparent;
+input {
+    margin-right: 5px;
+    padding: 2px;
 }
