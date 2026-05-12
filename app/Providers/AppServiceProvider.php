@@ -16,8 +16,9 @@ class AppServiceProvider extends ServiceProvider
     {
         View::share('environmentLabel', environment_label());
 
-        if (app()->environment('production')) {
+        if (!app()->environment('local')) {
             \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
         }
     }
+
 }
