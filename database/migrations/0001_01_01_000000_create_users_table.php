@@ -13,27 +13,27 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+
+            $table->string('username', 100)->unique();
+            $table->string('email')->nullable()->unique();
+
+            $table->string('f_name', 100);
+            $table->string('l_name', 100);
+
+            $table->string('address_line_1', 200)->nullable();
+            $table->string('address_line_2', 200)->nullable();
+            $table->string('city', 50)->nullable();
+            $table->string('postcode', 8)->nullable();
+            $table->string('mobile', 11)->nullable();
+
+            $table->string('password', 100);
+            $table->boolean('is_admin')->default(false);
+
+            $table->string('image', 50)->nullable();
+
             $table->rememberToken();
             $table->timestamps();
-        });
 
-        Schema::create('password_reset_tokens', function (Blueprint $table) {
-            $table->string('email')->primary();
-            $table->string('token');
-            $table->timestamp('created_at')->nullable();
-        });
-
-        Schema::create('sessions', function (Blueprint $table) {
-            $table->string('id')->primary();
-            $table->foreignId('user_id')->nullable()->index();
-            $table->string('ip_address', 45)->nullable();
-            $table->text('user_agent')->nullable();
-            $table->longText('payload');
-            $table->integer('last_activity')->index();
         });
     }
 

@@ -2,7 +2,7 @@
 
 @section('page-content')
 
-    <h1>Example of what a regular user might see when they are logged in:</h1>
+    <h1>Example of what an admin user might see when they are logged in:</h1>
 
     <div class="box_container">
 
