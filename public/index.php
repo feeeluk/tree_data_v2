@@ -1,5 +1,7 @@
 <?php
 
+dd(app()->environment());
+
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
