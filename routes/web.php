@@ -8,3 +8,6 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/test', fn() => view('pages.test'));
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
+
+dd(app()->environment());
+
