@@ -4,8 +4,8 @@
 
 <div id="" name="" class="loginDiv">
 
-    <form id="" name="" class="loginForm" method="POST" action="{{ route('login') }}">
-        @csrf
+    <form id="" name="" class="loginForm" method="POST" action="/login">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
         <table id="" name="" class="loginTable">
 

@@ -1,11 +1,9 @@
-
-
 <?php $__env->startSection('page-content'); ?>
 
 <div id="" name="" class="loginDiv">
 
-    <form id="" name="" class="loginForm" method="POST" action="<?php echo e(route('login')); ?>">
-        <?php echo csrf_field(); ?>
+    <form id="" name="" class="loginForm" method="POST" action="/login">
+        <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
 
         <table id="" name="" class="loginTable">
 
