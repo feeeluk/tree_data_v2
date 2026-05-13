@@ -3,7 +3,7 @@
 <div id="" name="" class="loginDiv">
 
     <form id="" name="" class="loginForm" method="POST" action="/login">
-        <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+        <?php echo csrf_field(); ?>
 
         <table id="" name="" class="loginTable">
 

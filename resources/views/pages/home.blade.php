@@ -5,7 +5,7 @@
 <div id="" name="" class="loginDiv">
 
     <form id="" name="" class="loginForm" method="POST" action="/login">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        @CSRF
 
         <table id="" name="" class="loginTable">
 
