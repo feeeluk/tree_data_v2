@@ -5,7 +5,7 @@
 <div id="" name="" class="loginDiv">
 
     <form id="" name="" class="loginForm" method="POST" action="/login">
-        @CSRF
+        @csrf
 
         <table id="" name="" class="loginTable">
 
