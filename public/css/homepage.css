@@ -1,0 +1,46 @@
+main{
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background: white;
+}
+
+.loginDiv {
+    width: 90%;
+    background-image: url("/images/homepage/homepage_background.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.loginForm {
+    height: fit-content;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media (min-width: 400px){
+        .loginForm {
+            margin-top: 50px;
+        }
+    }
+
+.loginTableCol1 {
+    padding: 8px 10px 8px 0;
+}
+
+input {
+    padding: 2px;
+}
+
+input[type="submit"], input[type="button"] {
+    margin-top: 5px;
+    margin-right: 5px;
+}
